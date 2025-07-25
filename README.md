@@ -52,6 +52,12 @@ GITHUB_TOKENS=ghp1,ghp2,ghp3
 ### 4. 安装依赖并运行 ⚡
 
 ```bash
+# 创建虚拟环境
+uv vene
+
+# 激活虚拟环境
+.venv\Scripts\Activate.ps1
+
 # 安装项目依赖
 uv pip install -r pyproject.toml
 
@@ -59,7 +65,7 @@ uv pip install -r pyproject.toml
 mkdir -p data
 
 # 运行程序
-python app/hajimi_king.py
+python -m app.hajimi_king
 ```
 
 ### 5. 本地运行管理 🎮
